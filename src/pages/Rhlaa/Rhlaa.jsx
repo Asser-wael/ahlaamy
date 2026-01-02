@@ -8,7 +8,7 @@ export default function Rhlaa() {
 useEffect(() => {
   setTimeout(() => {
     if (scrollRef.current) {
-      scrollRef.current.scrollTop = 0;
+      scrollRef.current.scrollTop = -100;
     }
   }, 50); // 50ms كافية في الغالب
 }, []);

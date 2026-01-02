@@ -1,0 +1,91 @@
+/* خلفية الصفحة */
+.body {
+  background-image: linear-gradient(rgb(250, 106, 255), rgb(252, 32, 204));
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Amiri', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* الكارت الرومانسي */
+.romantice {
+  background-color: white;
+  border-radius: 25px;
+  padding: 40px 30px;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* صورة kitty مع حركة تذبذب */
+.kitty-img {
+  width: 120px;
+  margin: 0 auto;
+  animation: wiggle 1.8s infinite ease-in-out;
+}
+
+/* حركة التذبذب */
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* العنوان الكبير */
+.romantice h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #fc32cc;
+  margin: 0;
+}
+
+/* النص العربي */
+.romantice p {
+  font-size: 18px;
+  color: #9b0370;
+  line-height: 1.6;
+}
+
+/* العنوان الفرعي */
+.romantice h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #f06fd3;
+}
+
+/* زرار رومانسي */
+.romantice button {
+  padding: 15px 35px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #c97a7a, #f2b5b5);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Amiri', serif;
+}
+
+.romantice button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.kitty-img2{
+  position: absolute;
+  width: 60px;
+  animation: wiggleeee 1.8s infinite ease-in-out;
+
+}
+
+@keyframes wiggleeee {
+  0% { transform: rotate(0deg) translateX(20px); }
+  25% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg) translateX(20px);  }
+}

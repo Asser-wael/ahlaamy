@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.img{
+  width: 60px;
+}
+/* النص العربي */
+body {
+  font-family: 'Amiri', serif;
+  direction: rtl;
+}
+
+/* النص الإنجليزي */
+.en {
+  font-family: 'Playfair Display', serif;
+  direction: ltr;
+}
+
+/* العناوين */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+

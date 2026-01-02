@@ -1,0 +1,128 @@
+/* خلفية الصفحة */
+.body1 {
+  background-image: linear-gradient(rgb(250, 106, 255), rgb(121, 4, 4));
+  width: 100%;
+  height: 500vh;
+  font-family: 'Amiri', serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* الكارت الرومانسي */
+.rhla {
+  background-color: white;
+  border-radius: 25px;
+  padding: 40px 30px;
+  max-width: 350px;
+  width: 100%;
+  min-height: 600px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+  overflow-y: auto;
+}
+
+/* كل ذكرى */
+.memory-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+/* عنوان الذكرى */
+.memory-item h1 {
+  font-size: 20px;
+  color: #d9046c;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+/* صورة الذكرى */
+.memory-img {
+  max-width: 90%;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(217, 4, 108, 0.4);
+  object-fit: cover;
+}
+
+/* عنوان فرعي */
+.rhla h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: #fc32cc;
+  margin-top: 20px;
+}
+
+/* زرار الرحلة */
+.rhla button {
+  padding: 15px 40px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #c97a7a, #f2b5b5);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Amiri', serif;
+  margin-top: auto;
+  align-self: center;
+  box-shadow: 0 4px 15px rgba(201, 122, 122, 0.6);
+}
+
+.rhla button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(252, 50, 204, 0.6);
+}
+
+/* شريط تمرير جميل للـ div لو زاد المحتوى */
+.rhla::-webkit-scrollbar {
+  width: 8px;
+}
+
+.rhla::-webkit-scrollbar-track {
+  background: #f1e6f9;
+  border-radius: 10px;
+}
+
+.rhla::-webkit-scrollbar-thumb {
+  background: #fc32cc;
+  border-radius: 10px;
+}
+
+.rhla::-webkit-scrollbar-thumb:hover {
+  background: #d9046c;
+}
+
+/* للأنيميشن */
+.hearts-animation {
+  position: absolute;
+  bottom:  -20px; /* فوق الكارت شوية */
+  left: 50%;  /* نص الكارت تقريبًا */
+  transform: translateX(-50%);
+  width: 120px;
+  pointer-events: none; /* عشان ما يمنعش الكليك على الزرار أو الصور */
+  z-index: 10;
+}
+
+.rhla {
+  background-color: white;
+  border-radius: 25px;
+  padding: 60px 30px 40px 30px; /* فوق أكبر شوية عشان الأنيميشن */
+  max-width: 350px;
+  width: 100%;
+  min-height: 650px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+  overflow-y: auto;
+}

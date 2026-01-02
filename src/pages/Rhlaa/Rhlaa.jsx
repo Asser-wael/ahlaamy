@@ -5,6 +5,14 @@ import Lottie from "lottie-react";
 
 export default function Rhlaa() {
   const navigate = useNavigate();
+useEffect(() => {
+  setTimeout(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = 0;
+    }
+  }, 50); // 50ms كافية في الغالب
+}, []);
+
 
   // هنا حط 100 جملة حب وصفات شخصية احلام
   const arr = [
